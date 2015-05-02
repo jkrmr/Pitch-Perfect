@@ -17,6 +17,10 @@ class ViewController: UIViewController {
         // typically from a nib.
     }
 
+    override func viewWillAppear(animated: Bool) {
+        stopButton.hidden = true
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -24,6 +28,7 @@ class ViewController: UIViewController {
 
     @IBAction func recordAudio(sender: UIButton) {
         recordingInProgress.hidden = false
+        stopButton.hidden = false
         println("recording Audio");
     }
 
