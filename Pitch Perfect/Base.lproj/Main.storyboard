@@ -103,6 +103,16 @@
                                     <action selector="playFastAudio:" destination="nTe-1O-5sh" eventType="touchUpInside" id="2ls-3S-MkZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wke-AQ-AaK">
+                                <rect key="frame" x="250" y="480" width="100" height="100"/>
+                                <state key="normal" image="Stop Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopAudio:" destination="nTe-1O-5sh" eventType="touchUpInside" id="XHi-2O-u3s"/>
+                                    <action selector="stopRecording:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Rux-K7-NL5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -113,11 +123,14 @@
                             <constraint firstItem="lAF-eh-M4g" firstAttribute="leading" secondItem="845-wK-42j" secondAttribute="leadingMargin" constant="25" id="JTl-eq-Q3r"/>
                             <constraint firstItem="B9N-27-rAP" firstAttribute="height" secondItem="lAF-eh-M4g" secondAttribute="height" id="ohn-ru-hyl"/>
                             <constraint firstItem="B9N-27-rAP" firstAttribute="width" secondItem="lAF-eh-M4g" secondAttribute="width" id="sqb-xy-SXM"/>
+                            <constraint firstAttribute="centerX" secondItem="wke-AQ-AaK" secondAttribute="centerX" id="vF1-Hr-FRd"/>
+                            <constraint firstItem="ubT-2m-sIj" firstAttribute="top" secondItem="wke-AQ-AaK" secondAttribute="bottom" constant="97" id="vnq-Yi-q5G"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="lAF-eh-M4g"/>
                                 <exclude reference="B9N-27-rAP"/>
+                                <exclude reference="wke-AQ-AaK"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="BkN-HS-oVD"/>
@@ -127,12 +140,15 @@
                                 <exclude reference="JH1-6V-goX"/>
                                 <exclude reference="ohn-ru-hyl"/>
                                 <exclude reference="sqb-xy-SXM"/>
+                                <exclude reference="vF1-Hr-FRd"/>
+                                <exclude reference="vnq-Yi-q5G"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="lAF-eh-M4g"/>
                                 <include reference="B9N-27-rAP"/>
+                                <include reference="wke-AQ-AaK"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="BkN-HS-oVD"/>
@@ -142,6 +158,8 @@
                                 <include reference="JH1-6V-goX"/>
                                 <include reference="ohn-ru-hyl"/>
                                 <include reference="sqb-xy-SXM"/>
+                                <include reference="vF1-Hr-FRd"/>
+                                <include reference="vnq-Yi-q5G"/>
                             </mask>
                         </variation>
                     </view>
