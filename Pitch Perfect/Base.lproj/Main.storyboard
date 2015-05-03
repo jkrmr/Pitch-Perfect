@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TtJ-C8-M9O">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -66,17 +67,55 @@
             </objects>
             <point key="canvasLocation" x="1512" y="315"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="3qD-04-s1P">
             <objects>
-                <viewController id="nTe-1O-5sh" sceneMemberID="viewController">
+                <viewController id="nTe-1O-5sh" customClass="PlaySoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e0P-cT-IgX"/>
                         <viewControllerLayoutGuide type="bottom" id="ubT-2m-sIj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="845-wK-42j">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAF-eh-M4g">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="Snail Image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="44" y="114" width="145" height="145"/>
+                                </variation>
+                                <connections>
+                                    <action selector="playSlow:" destination="nTe-1O-5sh" eventType="touchUpInside" id="ol4-Oy-YTp"/>
+                                    <action selector="playSlowAudio:" destination="nTe-1O-5sh" eventType="touchUpInside" id="pUE-zK-trm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lAF-eh-M4g" firstAttribute="top" secondItem="e0P-cT-IgX" secondAttribute="bottom" constant="50" id="BkN-HS-oVD"/>
+                            <constraint firstItem="lAF-eh-M4g" firstAttribute="leading" secondItem="845-wK-42j" secondAttribute="leadingMargin" constant="28" id="oax-t4-TOU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="lAF-eh-M4g"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="BkN-HS-oVD"/>
+                                <exclude reference="oax-t4-TOU"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="lAF-eh-M4g"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="BkN-HS-oVD"/>
+                                <include reference="oax-t4-TOU"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dkg-Mf-ash" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -104,6 +143,7 @@
     </scenes>
     <resources>
         <image name="Microphone" width="100" height="100"/>
+        <image name="Snail Image" width="200" height="200"/>
         <image name="Stop Button" width="100" height="100"/>
     </resources>
 </document>
