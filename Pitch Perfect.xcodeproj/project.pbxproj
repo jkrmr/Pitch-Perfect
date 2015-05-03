@@ -14,6 +14,7 @@
 		1BDBB1811AF514BC005CEC20 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BDBB17F1AF514BC005CEC20 /* LaunchScreen.xib */; };
 		1BDBB18D1AF514BC005CEC20 /* Pitch_PerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDBB18C1AF514BC005CEC20 /* Pitch_PerfectTests.swift */; };
 		1BDBB1971AF54C71005CEC20 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDBB1961AF54C71005CEC20 /* PlaySoundsViewController.swift */; };
+		1BDBB1991AF60502005CEC20 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1BDBB1981AF60502005CEC20 /* movie_quote.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		1BDBB18B1AF514BC005CEC20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BDBB18C1AF514BC005CEC20 /* Pitch_PerfectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch_PerfectTests.swift; sourceTree = "<group>"; };
 		1BDBB1961AF54C71005CEC20 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		1BDBB1981AF60502005CEC20 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = movie_quote.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		1BDBB1741AF514BC005CEC20 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1BDBB1981AF60502005CEC20 /* movie_quote.mp3 */,
 				1BDBB1751AF514BC005CEC20 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -197,6 +200,7 @@
 			files = (
 				1BDBB17C1AF514BC005CEC20 /* Main.storyboard in Resources */,
 				1BDBB1811AF514BC005CEC20 /* LaunchScreen.xib in Resources */,
+				1BDBB1991AF60502005CEC20 /* movie_quote.mp3 in Resources */,
 				1BDBB17E1AF514BC005CEC20 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

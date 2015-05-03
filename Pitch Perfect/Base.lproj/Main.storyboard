@@ -88,7 +88,6 @@
                                     <rect key="frame" x="44" y="114" width="145" height="145"/>
                                 </variation>
                                 <connections>
-                                    <action selector="playSlow:" destination="nTe-1O-5sh" eventType="touchUpInside" id="ol4-Oy-YTp"/>
                                     <action selector="playSlowAudio:" destination="nTe-1O-5sh" eventType="touchUpInside" id="pUE-zK-trm"/>
                                 </connections>
                             </button>
