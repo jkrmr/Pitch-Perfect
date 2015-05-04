@@ -115,13 +115,26 @@
                                     <action selector="stopAudio:" destination="nTe-1O-5sh" eventType="touchUpInside" id="XHi-2O-u3s"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6E-f5-ut8">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="Chipmunk">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playChipmunkAudio:" destination="nTe-1O-5sh" eventType="touchUpInside" id="0ye-wI-qKW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="H6E-f5-ut8" firstAttribute="top" secondItem="lAF-eh-M4g" secondAttribute="bottom" constant="29" id="3xp-3t-eIq"/>
                             <constraint firstAttribute="centerX" secondItem="wke-AQ-AaK" secondAttribute="centerX" id="5vW-v0-r2G"/>
                             <constraint firstAttribute="centerX" secondItem="B9N-27-rAP" secondAttribute="centerX" constant="-86" id="DxG-26-dCl"/>
+                            <constraint firstItem="H6E-f5-ut8" firstAttribute="top" secondItem="lAF-eh-M4g" secondAttribute="bottom" constant="29" id="E67-ZM-XFN"/>
                             <constraint firstAttribute="centerX" secondItem="lAF-eh-M4g" secondAttribute="centerX" constant="84" id="IXJ-ch-p4W"/>
+                            <constraint firstAttribute="centerX" secondItem="H6E-f5-ut8" secondAttribute="centerX" constant="84" id="Orm-8z-GhP"/>
                             <constraint firstItem="lAF-eh-M4g" firstAttribute="top" secondItem="e0P-cT-IgX" secondAttribute="bottom" constant="50" id="hF5-Xl-vmF"/>
+                            <constraint firstItem="H6E-f5-ut8" firstAttribute="top" secondItem="lAF-eh-M4g" secondAttribute="bottom" constant="-14" id="qlD-Ej-4Tt"/>
                             <constraint firstItem="B9N-27-rAP" firstAttribute="top" secondItem="e0P-cT-IgX" secondAttribute="bottom" constant="48" id="rGd-MF-mTk"/>
                             <constraint firstItem="ubT-2m-sIj" firstAttribute="top" secondItem="wke-AQ-AaK" secondAttribute="bottom" constant="97" id="u9R-JD-HPZ"/>
                         </constraints>
@@ -130,12 +143,17 @@
                                 <exclude reference="lAF-eh-M4g"/>
                                 <exclude reference="B9N-27-rAP"/>
                                 <exclude reference="wke-AQ-AaK"/>
+                                <exclude reference="H6E-f5-ut8"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="IXJ-ch-p4W"/>
                                 <exclude reference="hF5-Xl-vmF"/>
                                 <exclude reference="DxG-26-dCl"/>
                                 <exclude reference="rGd-MF-mTk"/>
+                                <exclude reference="3xp-3t-eIq"/>
+                                <exclude reference="E67-ZM-XFN"/>
+                                <exclude reference="Orm-8z-GhP"/>
+                                <exclude reference="qlD-Ej-4Tt"/>
                                 <exclude reference="5vW-v0-r2G"/>
                                 <exclude reference="u9R-JD-HPZ"/>
                             </mask>
@@ -145,12 +163,17 @@
                                 <include reference="lAF-eh-M4g"/>
                                 <include reference="B9N-27-rAP"/>
                                 <include reference="wke-AQ-AaK"/>
+                                <include reference="H6E-f5-ut8"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="IXJ-ch-p4W"/>
                                 <include reference="hF5-Xl-vmF"/>
                                 <include reference="DxG-26-dCl"/>
                                 <include reference="rGd-MF-mTk"/>
+                                <include reference="3xp-3t-eIq"/>
+                                <exclude reference="E67-ZM-XFN"/>
+                                <include reference="Orm-8z-GhP"/>
+                                <exclude reference="qlD-Ej-4Tt"/>
                                 <include reference="5vW-v0-r2G"/>
                                 <include reference="u9R-JD-HPZ"/>
                             </mask>
@@ -181,6 +204,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Chipmunk" width="200" height="200"/>
         <image name="Microphone" width="100" height="100"/>
         <image name="Rabbit" width="200" height="200"/>
         <image name="Snail" width="200" height="200"/>
