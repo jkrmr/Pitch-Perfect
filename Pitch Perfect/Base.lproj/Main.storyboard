@@ -35,7 +35,7 @@
                                     <rect key="frame" x="150" y="594" width="100" height="100"/>
                                 </variation>
                                 <connections>
-                                    <action selector="stopRecording:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pkk-JW-kIy"/>
+                                    <action selector="stopAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="34W-41-bLX"/>
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1O9-zn-HGj">
@@ -110,7 +110,6 @@
                                 </state>
                                 <connections>
                                     <action selector="stopAudio:" destination="nTe-1O-5sh" eventType="touchUpInside" id="XHi-2O-u3s"/>
-                                    <action selector="stopRecording:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Rux-K7-NL5"/>
                                 </connections>
                             </button>
                         </subviews>
