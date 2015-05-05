@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TtJ-C8-M9O">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Record Sounds View Controller-->
@@ -124,16 +125,30 @@
                                     <action selector="playChipmunkAudio:" destination="nTe-1O-5sh" eventType="touchUpInside" id="0ye-wI-qKW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbP-dM-Vqd">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="Vader">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playDarthVaderAudio:" destination="nTe-1O-5sh" eventType="touchUpInside" id="mu8-ZG-oSh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerY" secondItem="VbP-dM-Vqd" secondAttribute="centerY" constant="-43" id="38Y-0t-Agx"/>
                             <constraint firstItem="H6E-f5-ut8" firstAttribute="top" secondItem="lAF-eh-M4g" secondAttribute="bottom" constant="29" id="3xp-3t-eIq"/>
                             <constraint firstAttribute="centerX" secondItem="wke-AQ-AaK" secondAttribute="centerX" id="5vW-v0-r2G"/>
+                            <constraint firstAttribute="centerX" secondItem="VbP-dM-Vqd" secondAttribute="centerX" constant="-86" id="7vz-Q9-IPl"/>
                             <constraint firstAttribute="centerX" secondItem="B9N-27-rAP" secondAttribute="centerX" constant="-86" id="DxG-26-dCl"/>
                             <constraint firstItem="H6E-f5-ut8" firstAttribute="top" secondItem="lAF-eh-M4g" secondAttribute="bottom" constant="29" id="E67-ZM-XFN"/>
                             <constraint firstAttribute="centerX" secondItem="lAF-eh-M4g" secondAttribute="centerX" constant="84" id="IXJ-ch-p4W"/>
                             <constraint firstAttribute="centerX" secondItem="H6E-f5-ut8" secondAttribute="centerX" constant="84" id="Orm-8z-GhP"/>
+                            <constraint firstItem="VbP-dM-Vqd" firstAttribute="top" secondItem="B9N-27-rAP" secondAttribute="bottom" constant="31" id="Uvg-pT-6wD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VbP-dM-Vqd" secondAttribute="trailing" constant="-2" id="WM9-nO-VT8"/>
                             <constraint firstItem="lAF-eh-M4g" firstAttribute="top" secondItem="e0P-cT-IgX" secondAttribute="bottom" constant="50" id="hF5-Xl-vmF"/>
+                            <constraint firstAttribute="centerY" secondItem="H6E-f5-ut8" secondAttribute="centerY" constant="-43" id="jIN-LF-nY8"/>
                             <constraint firstItem="H6E-f5-ut8" firstAttribute="top" secondItem="lAF-eh-M4g" secondAttribute="bottom" constant="-14" id="qlD-Ej-4Tt"/>
                             <constraint firstItem="B9N-27-rAP" firstAttribute="top" secondItem="e0P-cT-IgX" secondAttribute="bottom" constant="48" id="rGd-MF-mTk"/>
                             <constraint firstItem="ubT-2m-sIj" firstAttribute="top" secondItem="wke-AQ-AaK" secondAttribute="bottom" constant="97" id="u9R-JD-HPZ"/>
@@ -144,6 +159,7 @@
                                 <exclude reference="B9N-27-rAP"/>
                                 <exclude reference="wke-AQ-AaK"/>
                                 <exclude reference="H6E-f5-ut8"/>
+                                <exclude reference="VbP-dM-Vqd"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="IXJ-ch-p4W"/>
@@ -153,7 +169,12 @@
                                 <exclude reference="3xp-3t-eIq"/>
                                 <exclude reference="E67-ZM-XFN"/>
                                 <exclude reference="Orm-8z-GhP"/>
+                                <exclude reference="jIN-LF-nY8"/>
                                 <exclude reference="qlD-Ej-4Tt"/>
+                                <exclude reference="38Y-0t-Agx"/>
+                                <exclude reference="7vz-Q9-IPl"/>
+                                <exclude reference="Uvg-pT-6wD"/>
+                                <exclude reference="WM9-nO-VT8"/>
                                 <exclude reference="5vW-v0-r2G"/>
                                 <exclude reference="u9R-JD-HPZ"/>
                             </mask>
@@ -164,6 +185,7 @@
                                 <include reference="B9N-27-rAP"/>
                                 <include reference="wke-AQ-AaK"/>
                                 <include reference="H6E-f5-ut8"/>
+                                <include reference="VbP-dM-Vqd"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="IXJ-ch-p4W"/>
@@ -173,7 +195,12 @@
                                 <include reference="3xp-3t-eIq"/>
                                 <exclude reference="E67-ZM-XFN"/>
                                 <include reference="Orm-8z-GhP"/>
+                                <include reference="jIN-LF-nY8"/>
                                 <exclude reference="qlD-Ej-4Tt"/>
+                                <include reference="38Y-0t-Agx"/>
+                                <include reference="7vz-Q9-IPl"/>
+                                <include reference="Uvg-pT-6wD"/>
+                                <include reference="WM9-nO-VT8"/>
                                 <include reference="5vW-v0-r2G"/>
                                 <include reference="u9R-JD-HPZ"/>
                             </mask>
@@ -209,5 +236,6 @@
         <image name="Rabbit" width="200" height="200"/>
         <image name="Snail" width="200" height="200"/>
         <image name="Stop Button" width="100" height="100"/>
+        <image name="Vader" width="200" height="200"/>
     </resources>
 </document>
