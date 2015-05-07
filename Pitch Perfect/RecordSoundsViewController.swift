@@ -30,7 +30,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
 
     @IBAction func recordAudio(sender: UIButton) {
-        recordingInProgress.hidden = false
+        recordingInProgress.text = "recording in progress"
         stopButton.hidden = false
         recordButton.enabled = false
 
@@ -79,7 +79,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
 
     @IBAction func stopAudio(sender: UIButton) {
-        recordingInProgress.hidden = true
+        recordingInProgress.text = "Tap to Record"
         stopButton.hidden = true
         recordButton.enabled = true
 

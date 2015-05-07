@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TtJ-C8-M9O">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -35,7 +36,7 @@
                                     <action selector="stopAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="34W-41-bLX"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1O9-zn-HGj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tap to Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1O9-zn-HGj">
                                 <rect key="frame" x="255" y="369" width="91" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -162,8 +163,7 @@
                                 <exclude reference="VbP-dM-Vqd"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="IXJ-ch-p4W"/>
-                                <exclude reference="hF5-Xl-vmF"/>
+                                <exclude reference="u9R-JD-HPZ"/>
                                 <exclude reference="DxG-26-dCl"/>
                                 <exclude reference="rGd-MF-mTk"/>
                                 <exclude reference="3xp-3t-eIq"/>
@@ -175,8 +175,9 @@
                                 <exclude reference="7vz-Q9-IPl"/>
                                 <exclude reference="Uvg-pT-6wD"/>
                                 <exclude reference="WM9-nO-VT8"/>
+                                <exclude reference="IXJ-ch-p4W"/>
+                                <exclude reference="hF5-Xl-vmF"/>
                                 <exclude reference="5vW-v0-r2G"/>
-                                <exclude reference="u9R-JD-HPZ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -188,8 +189,7 @@
                                 <include reference="VbP-dM-Vqd"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="IXJ-ch-p4W"/>
-                                <include reference="hF5-Xl-vmF"/>
+                                <include reference="u9R-JD-HPZ"/>
                                 <include reference="DxG-26-dCl"/>
                                 <include reference="rGd-MF-mTk"/>
                                 <include reference="3xp-3t-eIq"/>
@@ -201,8 +201,9 @@
                                 <include reference="7vz-Q9-IPl"/>
                                 <include reference="Uvg-pT-6wD"/>
                                 <include reference="WM9-nO-VT8"/>
+                                <include reference="IXJ-ch-p4W"/>
+                                <include reference="hF5-Xl-vmF"/>
                                 <include reference="5vW-v0-r2G"/>
-                                <include reference="u9R-JD-HPZ"/>
                             </mask>
                         </variation>
                     </view>
